@@ -75,6 +75,23 @@
 
   <object style="visibility:hidden" id="OpenSpeedTest-UI" data="assets/images/app.svg" type="image/svg+xml"></object>
 
+  <!-- 重新测速按钮容器 -->
+  <div id="restartButtonContainer" style="display: none; text-align: center; margin: 20px 0;">
+    <object id="restartButton" data="assets/images/app.svg#playButton" type="image/svg+xml" width="180" height="90"></object>
+    <div style="margin-top: 10px; font-size: 16px; color: #3da6ff; cursor: pointer;" onclick="restartTest()">重新测速</div>
+  </div>
+
+  <script>
+    // 重新测速函数（供按钮调用）
+    function restartTest() {
+      // 清空结果、隐藏按钮、重新运行测速
+      document.getElementById("restartButtonContainer").style.display = "none";
+      // 重置 UI（可选，根据需要调用 Show.reset() 等）
+      OpenSpeedTest.Start();  // 重新初始化引擎
+      runTasks();              // 直接开始新测速
+    }
+  </script>
+  
   <div class="Credits">
     自托管网络测速工具 · 基于 <a href="https://github.com/openspeedtest/Speed-Test" target="_blank">OpenSpeedTest 开源项目</a>
     <p style="font-size: 12px;">&copy; 2013-2026 OpenSpeedTest™ 项目衍生版本</p>
