@@ -11,7 +11,6 @@
 
 ## 截图预览
 
-（你可以稍后上传测速界面截图到仓库的 images 文件夹，然后在这里插入）
 
 ![测速界面](assets/images/screenshot.png)
 
@@ -32,7 +31,7 @@ Grok 提供了完整的代码分析、汉化建议、跳转清理方案以及最
 
 1. Fork 本仓库 或 下载 ZIP
 2. 登录 Cloudflare → Pages → 创建项目 → 连接 GitHub → 选择本仓库
-3. 部署完成后访问你的自定义域名（如 https://你的域名/Speed2/）
+3. 部署完成后访问你的自定义域名（如 https://你的域名/Speed/）
 
 其他平台（Vercel / Netlify）同样支持一键部署纯静态站点。
 
@@ -51,3 +50,4 @@ MIT License
 欢迎 Star、Fork、使用或反馈！
 
 有问题请在 Issues 中留言～
+
