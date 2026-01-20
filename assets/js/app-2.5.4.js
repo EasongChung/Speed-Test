@@ -1060,6 +1060,13 @@ window.onload = function() {
           // 已移除所有动态链接设置和跳转逻辑
           // 不再设置 xlink:href，也不再跳转到 openspeedtest.com
           // 结果页保持原样，不添加任何外部链接
+
+          // 新增：显示“重新测速”按钮、
+          var restartContainer = document.getElementById("restartButtonContainer");
+          if (restartContainer) {
+             restartContainer.style.display = "block";
+           }
+          
           Status = "busy";
           clearInterval(Engine);
         }
